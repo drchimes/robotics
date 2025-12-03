@@ -3,7 +3,7 @@ Modified from original code
     https://learn.adafruit.com/pm25-air-quality-sensor/arduino-code
 Need to:
 * change the baud rate on the serial monitor
-* need to install the library Adafruit_PM25AQI.h
+* need to install the library Adafruit_PM25AQI.h <- once per laptop
 */
 #include "Adafruit_PM25AQI.h" 
 
@@ -68,5 +68,12 @@ void loop() {
   Serial.println(F("---------------------------------------"));
   Serial.println();
 
-  delay(1000);
+  /* 
+  can add if/else if/ else statements here
+  if (data.pm10_standard > some_value){
+      do_something_here;
+  }
+  */
+
+  delay(1000); //change the delay value to adjust update rate
 }
